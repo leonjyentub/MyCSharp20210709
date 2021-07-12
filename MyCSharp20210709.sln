@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKeyEvent", "MyKeyEvent\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDirectGame", "MyDirectGame\MyDirectGame.csproj", "{9B9211F6-D169-49C6-AED7-50D983B93C3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFileSystem", "MyFileSystem\MyFileSystem.csproj", "{57173B9B-D0F6-4566-A270-45805B8658D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{9B9211F6-D169-49C6-AED7-50D983B93C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B9211F6-D169-49C6-AED7-50D983B93C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B9211F6-D169-49C6-AED7-50D983B93C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57173B9B-D0F6-4566-A270-45805B8658D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57173B9B-D0F6-4566-A270-45805B8658D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57173B9B-D0F6-4566-A270-45805B8658D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57173B9B-D0F6-4566-A270-45805B8658D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
