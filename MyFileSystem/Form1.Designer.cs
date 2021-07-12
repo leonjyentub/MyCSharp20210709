@@ -31,6 +31,7 @@ namespace MyFileSystem
         {
             this.lblMsg = new System.Windows.Forms.Label();
             this.btnAction = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // lblMsg
@@ -46,7 +47,7 @@ namespace MyFileSystem
             // btnAction
             // 
             this.btnAction.Font = new System.Drawing.Font("新細明體", 14F);
-            this.btnAction.Location = new System.Drawing.Point(316, 9);
+            this.btnAction.Location = new System.Drawing.Point(443, 293);
             this.btnAction.Name = "btnAction";
             this.btnAction.Size = new System.Drawing.Size(159, 33);
             this.btnAction.TabIndex = 1;
@@ -72,6 +73,7 @@ namespace MyFileSystem
 
         private System.Windows.Forms.Label lblMsg;
         private System.Windows.Forms.Button btnAction;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

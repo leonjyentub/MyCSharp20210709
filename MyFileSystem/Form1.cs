@@ -19,10 +19,20 @@ namespace MyFileSystem
 
         private void btnAction_Click(object sender, EventArgs e)
         {
-            DirectoryInfo dirInfo = new DirectoryInfo(@"C:\Users\leonjye\Downloads\diricons2");
-            dirInfo.MoveTo(@"C:\Users\leonjye\Downloads\myicons0304");
-            lblMsg.Text = @"移動到C:\Users\leonjye\Downloads\myicons0304";
-            //dirInfo.Delete();
+            if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                DirectoryInfo fromInfo = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
+                DirectoryInfo targetInfo = new DirectoryInfo(@"C:\Users\leonjye\Downloads\myicons0304-2");
+                if (!fromInfo.Exists || targetInfo.Exists)
+                {
+                    lblMsg.Text = "來源不存在或目的地重覆";
+                }
+                else
+                {
+                    fromInfo.MoveTo(targetInfo.FullName);
+                    lblMsg.Text = $"從{folderBrowserDialog1.SelectedPath}移動到" + targetInfo.FullName;
+                }
+            }
         }
     }
 }
