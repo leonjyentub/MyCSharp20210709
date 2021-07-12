@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGame1", "MyGame1\MyGame1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{21054BDD-62A7-4063-A20D-1EB62B703291}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKeyEvent", "MyKeyEvent\MyKeyEvent.csproj", "{FD365DAF-C9F8-4719-BFD2-CBEBA0FCF7EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{21054BDD-62A7-4063-A20D-1EB62B703291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21054BDD-62A7-4063-A20D-1EB62B703291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21054BDD-62A7-4063-A20D-1EB62B703291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD365DAF-C9F8-4719-BFD2-CBEBA0FCF7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD365DAF-C9F8-4719-BFD2-CBEBA0FCF7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD365DAF-C9F8-4719-BFD2-CBEBA0FCF7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD365DAF-C9F8-4719-BFD2-CBEBA0FCF7EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
