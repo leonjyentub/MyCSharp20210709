@@ -22,6 +22,7 @@ namespace MyFileSystem
             if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 DirectoryInfo fromInfo = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
+                
                 DirectoryInfo targetInfo = new DirectoryInfo(@"C:\Users\leonjye\Downloads\myicons0304-2");
                 if (!fromInfo.Exists || targetInfo.Exists)
                 {
@@ -32,6 +33,16 @@ namespace MyFileSystem
                     fromInfo.MoveTo(targetInfo.FullName);
                     lblMsg.Text = $"從{folderBrowserDialog1.SelectedPath}移動到" + targetInfo.FullName;
                 }
+            }
+        }
+
+        private void btnOpenFile_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = @"C:\Users\leonjye\Downloads";
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                String fromfile = openFileDialog1.FileName;
+                File.Copy(fromfile, @"C:\Users\leonjye\Downloads\test_out.txt");
             }
         }
     }

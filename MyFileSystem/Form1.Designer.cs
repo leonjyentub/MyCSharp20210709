@@ -32,6 +32,8 @@ namespace MyFileSystem
             this.lblMsg = new System.Windows.Forms.Label();
             this.btnAction = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnOpenFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMsg
@@ -47,7 +49,7 @@ namespace MyFileSystem
             // btnAction
             // 
             this.btnAction.Font = new System.Drawing.Font("新細明體", 14F);
-            this.btnAction.Location = new System.Drawing.Point(443, 293);
+            this.btnAction.Location = new System.Drawing.Point(16, 293);
             this.btnAction.Name = "btnAction";
             this.btnAction.Size = new System.Drawing.Size(159, 33);
             this.btnAction.TabIndex = 1;
@@ -55,11 +57,27 @@ namespace MyFileSystem
             this.btnAction.UseVisualStyleBackColor = true;
             this.btnAction.Click += new System.EventHandler(this.btnAction_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnOpenFile
+            // 
+            this.btnOpenFile.Font = new System.Drawing.Font("新細明體", 16F);
+            this.btnOpenFile.Location = new System.Drawing.Point(196, 293);
+            this.btnOpenFile.Name = "btnOpenFile";
+            this.btnOpenFile.Size = new System.Drawing.Size(173, 33);
+            this.btnOpenFile.TabIndex = 2;
+            this.btnOpenFile.Text = "選取檔案";
+            this.btnOpenFile.UseVisualStyleBackColor = true;
+            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 338);
+            this.Controls.Add(this.btnOpenFile);
             this.Controls.Add(this.btnAction);
             this.Controls.Add(this.lblMsg);
             this.Name = "Form1";
@@ -74,6 +92,8 @@ namespace MyFileSystem
         private System.Windows.Forms.Label lblMsg;
         private System.Windows.Forms.Button btnAction;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btnOpenFile;
     }
 }
 
