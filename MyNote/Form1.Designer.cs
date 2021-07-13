@@ -46,6 +46,7 @@ namespace MyNote
             this.lstContent.Name = "lstContent";
             this.lstContent.Size = new System.Drawing.Size(519, 354);
             this.lstContent.TabIndex = 0;
+            this.lstContent.SelectedIndexChanged += new System.EventHandler(this.lstContent_SelectedIndexChanged);
             // 
             // label1
             // 
