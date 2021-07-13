@@ -11,9 +11,15 @@ namespace MyClassConsole
     {
         static void Main(string[] args)
         {
-            MyClass my = new MyClass();
-            my.A = 10;
+            MyClass my = new MyClass()
+            {
+                Name = "JJ",
+                Score = 60
+            };
+
+            MyClass mate = new MyClass("John", 100);
             my.HelloWorldTest();
+            mate.HelloWorldTest();
             Console.ReadKey();
         }
     }
