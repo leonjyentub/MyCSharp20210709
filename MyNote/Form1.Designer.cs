@@ -35,6 +35,7 @@ namespace MyNote
             this.txtContent = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstContent
@@ -89,17 +90,29 @@ namespace MyNote
             this.btnSave.Font = new System.Drawing.Font("新細明體", 16F);
             this.btnSave.Location = new System.Drawing.Point(16, 462);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(515, 46);
+            this.btnSave.Size = new System.Drawing.Size(221, 46);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("新細明體", 16F);
+            this.btnUpdate.Location = new System.Drawing.Point(269, 462);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(228, 46);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 534);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.label2);
@@ -121,6 +134,7 @@ namespace MyNote
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

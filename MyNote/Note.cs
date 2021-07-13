@@ -11,5 +11,10 @@ namespace MyNote
         public String Title { get; set; }
         public String Content { get; set; }
         public String GetFullMessage() { return this.Title + " -" + this.Content; }
+
+        public override string ToString()
+        {
+            return this.GetFullMessage();
+        }
     }
 }

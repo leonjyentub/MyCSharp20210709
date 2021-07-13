@@ -13,7 +13,7 @@ namespace MyNote
 {
     public partial class Form1 : Form
     {
-        private ArrayList mylist = new ArrayList();
+        private List<Note> myNotes = new List<Note>();
         
         public Form1()
         {
@@ -24,7 +24,7 @@ namespace MyNote
         {
             Note n = new Note() { Title = txtTitle.Text, Content = txtContent.Text };
             lstContent.Items.Add(n.GetFullMessage());
-            mylist.Add(n);
+            myNotes.Add(n);
             txtTitle.Clear();
             txtContent.Clear();
         }
@@ -32,9 +32,25 @@ namespace MyNote
         private void lstContent_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = lstContent.SelectedIndex;
-            Note note = (Note)mylist[index];
-            txtTitle.Text = note.Title;
-            txtContent.Text = note.Content;
+            if(index < myNotes.Count)
+            {
+                Note note = myNotes[index];
+                txtTitle.Text = note.Title;
+                txtContent.Text = note.Content;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int index = lstContent.SelectedIndex;
+            if(index < myNotes.Count)
+            {
+                Note note = myNotes[index];
+                note.Title = txtTitle.Text;
+                note.Content = txtContent.Text;
+                lstContent.Items.Clear();
+                lstContent.Items.AddRange(myNotes.ToArray());
+            }
         }
     }
 }

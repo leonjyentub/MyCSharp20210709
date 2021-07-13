@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassConsole", "MyClassCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNote", "MyNote\MyNote.csproj", "{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInheritTest", "MyInheritTest\MyInheritTest.csproj", "{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
