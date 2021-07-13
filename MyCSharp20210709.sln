@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFileSystem", "MyFileSyste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUselessNotepad", "MyUselessNotepad\MyUselessNotepad.csproj", "{E61E36E4-63C7-4CE8-9F9B-D8CA18EF5A06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassConsole", "MyClassConsole\MyClassConsole.csproj", "{B98DE3A1-F7B1-47D5-A249-4886E36972D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{E61E36E4-63C7-4CE8-9F9B-D8CA18EF5A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61E36E4-63C7-4CE8-9F9B-D8CA18EF5A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61E36E4-63C7-4CE8-9F9B-D8CA18EF5A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
