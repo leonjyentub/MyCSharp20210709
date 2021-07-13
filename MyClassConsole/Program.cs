@@ -21,6 +21,7 @@ namespace MyClassConsole
         }
         public String Name { get; set; }
         private int _score;  //一般普通欄位
+        public static String CourseName = "";
         public int Score
         {
             get { return this._score; }
@@ -40,7 +41,7 @@ namespace MyClassConsole
 
         public void HelloWorldTest()
         {
-            Console.WriteLine($"我是{this.Name}分數是{this._score}");
+            Console.WriteLine($"課程名稱：{CourseName} 我是{this.Name}分數是{this._score}");
         }
     }
     class Program
@@ -54,6 +55,9 @@ namespace MyClassConsole
             };
 
             MyClass mate = new MyClass("John", 100);
+            MyClass.CourseName = "C#程式設計";
+            my.HelloWorldTest();
+            MyClass.CourseName = "C#！！！";
             my.HelloWorldTest();
             mate.HelloWorldTest();
             Console.ReadKey();

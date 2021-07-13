@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUselessNotepad", "MyUsele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassConsole", "MyClassConsole\MyClassConsole.csproj", "{B98DE3A1-F7B1-47D5-A249-4886E36972D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNote", "MyNote\MyNote.csproj", "{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B98DE3A1-F7B1-47D5-A249-4886E36972D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB12F19-3592-4F10-B2EB-CB64942CF4A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
