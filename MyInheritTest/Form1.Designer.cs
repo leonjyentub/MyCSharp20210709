@@ -29,20 +29,36 @@ namespace MyInheritTest
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblMsg
+            // 
+            this.lblMsg.AutoSize = true;
+            this.lblMsg.Font = new System.Drawing.Font("新細明體", 15F);
+            this.lblMsg.Location = new System.Drawing.Point(23, 9);
+            this.lblMsg.Name = "lblMsg";
+            this.lblMsg.Size = new System.Drawing.Size(70, 25);
+            this.lblMsg.TabIndex = 0;
+            this.lblMsg.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 364);
+            this.Controls.Add(this.lblMsg);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblMsg;
     }
 }
 
