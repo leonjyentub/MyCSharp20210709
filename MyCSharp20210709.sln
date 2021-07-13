@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNote", "MyNote\MyNote.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInheritTest", "MyInheritTest\MyInheritTest.csproj", "{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInheritConsole2", "MyInheritConsole2\MyInheritConsole2.csproj", "{AD4D3200-7D0F-4990-B75A-F5A9A0A452C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{439A63C3-4C3B-4F5C-AA12-99F8FC3A6921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4D3200-7D0F-4990-B75A-F5A9A0A452C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4D3200-7D0F-4990-B75A-F5A9A0A452C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4D3200-7D0F-4990-B75A-F5A9A0A452C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4D3200-7D0F-4990-B75A-F5A9A0A452C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
