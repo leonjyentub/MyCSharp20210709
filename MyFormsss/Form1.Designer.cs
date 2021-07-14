@@ -32,6 +32,7 @@ namespace MyFormsss
             this.lstBox = new System.Windows.Forms.ListBox();
             this.btnNewForm = new System.Windows.Forms.Button();
             this.btnOrderbyScore = new System.Windows.Forms.Button();
+            this.btnShowPass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstBox
@@ -68,11 +69,23 @@ namespace MyFormsss
             this.btnOrderbyScore.UseVisualStyleBackColor = true;
             this.btnOrderbyScore.Click += new System.EventHandler(this.btnOrderbyScore_Click);
             // 
+            // btnShowPass
+            // 
+            this.btnShowPass.Font = new System.Drawing.Font("新細明體", 14F);
+            this.btnShowPass.Location = new System.Drawing.Point(12, 308);
+            this.btnShowPass.Name = "btnShowPass";
+            this.btnShowPass.Size = new System.Drawing.Size(151, 40);
+            this.btnShowPass.TabIndex = 3;
+            this.btnShowPass.Text = "只顯示及格";
+            this.btnShowPass.UseVisualStyleBackColor = true;
+            this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 487);
+            this.Controls.Add(this.btnShowPass);
             this.Controls.Add(this.btnOrderbyScore);
             this.Controls.Add(this.btnNewForm);
             this.Controls.Add(this.lstBox);
@@ -87,6 +100,7 @@ namespace MyFormsss
         private System.Windows.Forms.ListBox lstBox;
         private System.Windows.Forms.Button btnNewForm;
         private System.Windows.Forms.Button btnOrderbyScore;
+        private System.Windows.Forms.Button btnShowPass;
     }
 }
 

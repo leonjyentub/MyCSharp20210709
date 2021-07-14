@@ -52,5 +52,20 @@ namespace MyFormsss
             }
             defaultOrder = !defaultOrder;
         }
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            lstBox.Items.Clear();
+            /*
+            lstBox.Items.AddRange(scores.Where(x => x.Score >= 60)
+                                        .OrderBy(x => x.Score)
+                                        .ToArray());
+            */
+            var result = from x in scores
+                         where x.Score >= 60
+                         orderby x.Score descending
+                         select x.UserName;
+            lstBox.Items.AddRange(result.ToArray());
+        }
     }
 }
