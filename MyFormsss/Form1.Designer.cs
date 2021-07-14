@@ -63,7 +63,7 @@ namespace MyFormsss
             // btnOrderbyScore
             // 
             this.btnOrderbyScore.Font = new System.Drawing.Font("新細明體", 14F);
-            this.btnOrderbyScore.Location = new System.Drawing.Point(12, 252);
+            this.btnOrderbyScore.Location = new System.Drawing.Point(12, 343);
             this.btnOrderbyScore.Name = "btnOrderbyScore";
             this.btnOrderbyScore.Size = new System.Drawing.Size(151, 40);
             this.btnOrderbyScore.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace MyFormsss
             // btnShowPass
             // 
             this.btnShowPass.Font = new System.Drawing.Font("新細明體", 14F);
-            this.btnShowPass.Location = new System.Drawing.Point(12, 308);
+            this.btnShowPass.Location = new System.Drawing.Point(12, 389);
             this.btnShowPass.Name = "btnShowPass";
             this.btnShowPass.Size = new System.Drawing.Size(151, 40);
             this.btnShowPass.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace MyFormsss
             // 
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("新細明體", 14F);
-            this.lblRecords.Location = new System.Drawing.Point(497, 252);
+            this.lblRecords.Location = new System.Drawing.Point(497, 405);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(64, 24);
             this.lblRecords.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace MyFormsss
             // 
             this.lblAverage.AutoSize = true;
             this.lblAverage.Font = new System.Drawing.Font("新細明體", 14F);
-            this.lblAverage.Location = new System.Drawing.Point(497, 291);
+            this.lblAverage.Location = new System.Drawing.Point(497, 444);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(64, 24);
             this.lblAverage.TabIndex = 5;
@@ -104,6 +104,7 @@ namespace MyFormsss
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnNewForm;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 487);
