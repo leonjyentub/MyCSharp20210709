@@ -16,7 +16,10 @@ namespace MyInheritConsole2
         public virtual void Method_2()
         {
             Console.WriteLine("A-Method_2 running");
+            Method_3();
         }
+
+        public abstract void Method_3();
     }
 
     class B : A
