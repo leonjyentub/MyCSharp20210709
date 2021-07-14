@@ -35,8 +35,10 @@ namespace MyDino
             this.timerJump = new System.Windows.Forms.Timer(this.components);
             this.timerRoad = new System.Windows.Forms.Timer(this.components);
             this.picTree = new System.Windows.Forms.PictureBox();
+            this.picTree2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picDino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTree2)).BeginInit();
             this.SuspendLayout();
             // 
             // picDino
@@ -78,11 +80,22 @@ namespace MyDino
             this.picTree.TabIndex = 2;
             this.picTree.TabStop = false;
             // 
+            // picTree2
+            // 
+            this.picTree2.Image = global::MyDino.Properties.Resources.obstacle_1;
+            this.picTree2.Location = new System.Drawing.Point(638, 211);
+            this.picTree2.Name = "picTree2";
+            this.picTree2.Size = new System.Drawing.Size(23, 46);
+            this.picTree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picTree2.TabIndex = 3;
+            this.picTree2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 310);
+            this.Controls.Add(this.picTree2);
             this.Controls.Add(this.picTree);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picDino);
@@ -91,6 +104,7 @@ namespace MyDino
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.picDino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTree2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +117,7 @@ namespace MyDino
         private System.Windows.Forms.Timer timerJump;
         private System.Windows.Forms.Timer timerRoad;
         private System.Windows.Forms.PictureBox picTree;
+        private System.Windows.Forms.PictureBox picTree2;
     }
 }
 

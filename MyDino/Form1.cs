@@ -14,13 +14,17 @@ namespace MyDino
     {
         private bool isUp = false;
         private int startTop = 0;
-        private int treeLeft = 0;
+        private int[] treeLeft = new int[2];
+        private Random random = new Random();
+        private PictureBox[] trees;
         public Form1()
         {
             InitializeComponent();
             startTop = picDino.Top;
-            treeLeft = picTree.Left;
             timerRoad.Enabled = true;
+            trees = new PictureBox[2] { picTree, picTree2 };
+            treeLeft[0] = trees[0].Left;
+            treeLeft[1] = trees[1].Left;
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
@@ -43,16 +47,28 @@ namespace MyDino
 
         private void timerRoad_Tick(object sender, EventArgs e)
         {
-            picTree.Left -= 20;
-            if(picDino.Bounds.IntersectsWith(picTree.Bounds))
+            for(int i=0;i<trees.Length;i++)
             {
-                this.Text = "失敗~";
-                timerJump.Stop();
-                timerRoad.Stop();
-            }
-            if(picTree.Left <= 0)
-            {
-                picTree.Left = treeLeft;
+                PictureBox picTree = trees[i];
+                picTree.Left -= 20;
+                if (picDino.Bounds.IntersectsWith(picTree.Bounds))
+                {
+                    this.Text = "失敗~";
+                    timerJump.Stop();
+                    timerRoad.Stop();
+                }
+                if (picTree.Left <= 0)
+                {
+                    if (random.NextDouble() > 0.8D) // 1/5的機率會重新出現
+                    {
+                        if (random.NextDouble() >= 0.5D)
+                            picTree.Image = Properties.Resources.obstacle_1;
+                        else
+                            picTree.Image = Properties.Resources.obstacle_2;
+                        picTree.Left = treeLeft[i];
+
+                    }
+                }
             }
         }
     }
