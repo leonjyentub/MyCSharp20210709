@@ -23,6 +23,10 @@ namespace MyFormsss
             scores.Add(new MyScore() { UserName = "test", SNo = "010", Score = 40 });
             scores.Add(new MyScore() { UserName = "ntub", SNo = "003", Score = 60 });
             lstBox.Items.AddRange(scores.ToArray());
+            int rowsCount = scores.Count();
+            lblRecords.Text = $"{rowsCount}筆";
+            double average = scores.Average(x => x.Score);
+            lblAverage.Text = $"{average:F2}";
         }
 
         private void btnNewForm_Click(object sender, EventArgs e)
@@ -64,7 +68,9 @@ namespace MyFormsss
             var result = from x in scores
                          where x.Score >= 60
                          orderby x.Score descending
-                         select x.UserName;
+                         select x;
+            int rowsCount = scores.Where(x => x.Score >= 60).Count();
+            double average = scores.Where(x => x.Score >= 60).Average(x => x.Score);
             lstBox.Items.AddRange(result.ToArray());
         }
     }

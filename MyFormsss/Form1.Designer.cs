@@ -33,6 +33,8 @@ namespace MyFormsss
             this.btnNewForm = new System.Windows.Forms.Button();
             this.btnOrderbyScore = new System.Windows.Forms.Button();
             this.btnShowPass = new System.Windows.Forms.Button();
+            this.lblRecords = new System.Windows.Forms.Label();
+            this.lblAverage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lstBox
@@ -80,11 +82,33 @@ namespace MyFormsss
             this.btnShowPass.UseVisualStyleBackColor = true;
             this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
+            // lblRecords
+            // 
+            this.lblRecords.AutoSize = true;
+            this.lblRecords.Font = new System.Drawing.Font("新細明體", 14F);
+            this.lblRecords.Location = new System.Drawing.Point(497, 252);
+            this.lblRecords.Name = "lblRecords";
+            this.lblRecords.Size = new System.Drawing.Size(64, 24);
+            this.lblRecords.TabIndex = 4;
+            this.lblRecords.Text = "label1";
+            // 
+            // lblAverage
+            // 
+            this.lblAverage.AutoSize = true;
+            this.lblAverage.Font = new System.Drawing.Font("新細明體", 14F);
+            this.lblAverage.Location = new System.Drawing.Point(497, 291);
+            this.lblAverage.Name = "lblAverage";
+            this.lblAverage.Size = new System.Drawing.Size(64, 24);
+            this.lblAverage.TabIndex = 5;
+            this.lblAverage.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 487);
+            this.Controls.Add(this.lblAverage);
+            this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.btnShowPass);
             this.Controls.Add(this.btnOrderbyScore);
             this.Controls.Add(this.btnNewForm);
@@ -92,6 +116,7 @@ namespace MyFormsss
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -101,6 +126,8 @@ namespace MyFormsss
         private System.Windows.Forms.Button btnNewForm;
         private System.Windows.Forms.Button btnOrderbyScore;
         private System.Windows.Forms.Button btnShowPass;
+        private System.Windows.Forms.Label lblRecords;
+        private System.Windows.Forms.Label lblAverage;
     }
 }
 
